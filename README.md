@@ -4,8 +4,8 @@ The Password Strength Checker is a C++ program designed to help users evaluate t
 
 ## Features
 * Password Strength Evaluation:
-      * Checks password length.
-      * Ensures inclusion of uppercase and lowercase letters.
+       * Checks password length.
+       * Ensures inclusion of uppercase and lowercase letters.
       * Validates the presence of digits and special characters.
       * Rates password strength from "Very Weak" to "Very Strong."
 * Compromised Password Detection:
