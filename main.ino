@@ -24,7 +24,7 @@ int main() {
     std::unordered_set<std::string> compromisedPasswords;
 
     // Use the absolute path
-    std::string filename = "/Users/basiljoy/Documents/Mac/CUJ/Certification and Resume/Projects/Password tester/compromised_passwords.txt";
+    std::string filename = "location/compromised_passwords.txt";
     
     if (!loadCompromisedPasswords(filename, compromisedPasswords)) {
         return 1;  // Exit if file loading fails
