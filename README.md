@@ -4,23 +4,23 @@ The Password Strength Checker is a C++ program designed to help users evaluate t
 
 ## Features
 * Password Strength Evaluation:
-       * Checks password length.
-       * Ensures inclusion of uppercase and lowercase letters.
-      * Validates the presence of digits and special characters.
-      * Rates password strength from "Very Weak" to "Very Strong."
+  * Checks password length.
+  * Ensures inclusion of uppercase and lowercase letters.
+  * Validates the presence of digits and special characters.
+  * Rates password strength from `"Very Weak"` to `"Very Strong."`
 * Compromised Password Detection:
-      * Version 2 introduces a check against a database of compromised passwords. This feature alerts the user if their password has appeared in known breaches.
+  * Version 2 introduces a check against a database of compromised passwords. This feature alerts the user if their password has appeared in known breaches.
 ## Version History
 ### Version 1.0
 * Basic password strength checker without compromised password detection.
-* Strength ratings based on:
-      * Password length (minimum of 8 characters).
-      * Uppercase and lowercase letters.
-      * Digits.
-      * Special characters.
+  * Strength ratings based on:
+  * Password length (minimum of 8 characters).
+  * Uppercase and lowercase letters.
+  * Digits.
+  * Special characters.
 ### Version 2.0
 * **New Feature:** Compromised password detection.
-      * Loads a file containing a list of known compromised passwords and compares it against user input.
+  * Loads a file containing a list of known compromised passwords and compares it against user input.
 * Improvements in password validation logic and user interface.
 ## Installation
 1. Clone the repository:
@@ -89,6 +89,20 @@ bool loadCompromisedPasswords(const std::string &filename, std::unordered_set<st
 * Language: C++
 * Libraries: Standard C++ libraries including
   `<iostream>`, `<stream>`,`<string>`,`<unordered_set>`, and `<cctype>` for character checking functions.
+
+## Benefits
+* **Enhanced Security Awareness:** Helps users choose stronger passwords by rating their password's strength.
+* **Comprehensive Validation:** Checks for length, uppercase letters, lowercase letters, numbers, and special characters.
+* **Compromised Password Detection:** (Version 2) Warns users if their password has appeared in known data breaches, making it easier to avoid using compromised passwords.
+* **Cross-Platform:** Written in C++, the program can run on multiple operating systems.
+* E**ducational Value:** Teaches the basics of password validation and security, making it a useful learning tool.
+
+## Limitations
+* **Limited to Offline Checks:** The program relies on a static list of compromised passwords, which may not always be up-to-date. Integration with an online service would allow for more current data.
+* **Password File Size:** For large compromised password lists, memory usage may be high. Optimizations may be needed for extremely large datasets.
+* **Basic Strength Metrics:** The tool uses basic metrics to evaluate password strength, which may not be comprehensive for advanced security standards.
+* **No Real-Time Suggestions:** The program doesn’t suggest stronger passwords or help users create secure ones; it only evaluates strength.
+* **Command-Line Interface:** With a command-line-only interface, it might not be accessible or user-friendly for non-technical users.
   
 ## Contribution
 Feel free to contribute by submitting issues, making pull requests, or suggesting enhancements.
